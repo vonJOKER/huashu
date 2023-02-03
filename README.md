@@ -1,4 +1,4 @@
-# 一个简洁、易用的美赛 LaTeX 模板: easymcm
+# 一个简洁、易用的美赛 LaTeX 模板: easymcm（非本人开发，已star，学习用）
 
 [![GitHub release (latest by date)](https://img.shields.io/github/v/release/xjtu-blacksmith/easymcm)](https://github.com/xjtu-blacksmith/easymcm/releases)
 ![GitHub All Releases](https://img.shields.io/github/downloads/xjtu-blacksmith/easymcm/total)
