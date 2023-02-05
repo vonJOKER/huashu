@@ -13,6 +13,9 @@
 %\renewcommand{\contest}{MCM}
 \usepackage{bm}
 \usepackage{cleveref}
+\usepackage{ulem}
+\usepackage{geometry}
+\usepackage{framed} 
 % 文档开始
 \begin{document}
 
@@ -42,6 +45,12 @@
 China has been undergoing a period of political, economic, social, and cultural system transformation since the reform and opening up. At the same time that urbanization has accelerated and various new and old types of contradictions and conflicts have persisted, the functioning of the social system has been disrupted, which has forced society to transform in an unbalanced and uncoordinated way. The complexity and unpredictability of society have substantially expanded in the age of worldwide informationization, along with the rapid growth of the economy, and risk factors have multiplied around people's everyday lives, altering how they perceive social security and stability. 
 
 The brutal terrorist attack in Kunming, the explosion accident in Tianjin Binhai New Area, the Changchun Changsheng vaccine incident, and the repeated outlawing of environmental pollution and economic aid crimes all strongly suggest the emergence of a risk society. As a result, China must now grapple with the issue of how to preserve social harmony and stability while the country is developing economically and socially and reduce the negative effects of multiple risk events.
+
+Since the beginning of the new century, the international and regional situation has been turbulent, and the ``color revolution'' is like a sword of Damocles hanging above the Eurasian continent, especially the post-Soviet space, and the Western forces led by the United States have never given up their attempt to carry out ``democratic transformation'' of the political system of the former Soviet republics. This poses a huge threat to Eurasian countries, including China and Russia.
+
+From 2003 to 2005, ``Color revolutions'' occurred in Georgia, Ukraine, and Kyrgyzstan, three neighboring countries of Russia, forcing regime change in a relatively non-violent manner, his original Union Republic of the Soviet Union caused varying degrees of shock. This new type of political movement is obviously different from the traditional forms of war, and has become one of the important means by which the western forces, led by the United States, forcibly intervene in the internal affairs of other countries and try to overthrow the regime, it poses a serious challenge to the security situation in the region.
+
+In the past two decades, the ``Color revolution'' has not been abated. Instead, it has been constantly upgrading technological means and tools, with a lasting impact on the security of the Eurasian region. Objective results show that: first, the threat of ``Color Revolution'' can not be underestimated, and may even be repeated in many parts of the world, is a long-term follow-up attention, and second, the ``Color Revolution'' is full of hypocrisy and lies. Many countries that have experienced the ``Color revolution'' have not been able to achieve the desired ``Democratic transformation'' to bring about fruitful results, it is mired in economic ruin and political chaos. The so-called western-style ``Democracy'' is only to foster pro-western political forces to come to power, thus providing more economic and political benefits for the west. It is not to really solve local social and economic problems, the ultimate victim is the local people.
 \subsection{Problem Restatement}
 \begin{itemize}
 \item \textbf{For problem 1:} We are required to select representative indicators in various aspects to reflect various aspects of social stability. And from a qualitative and quantitative point of view, establish a system of indicators of social stability, and discuss their interrelationship.
@@ -50,7 +59,7 @@ The brutal terrorist attack in Kunming, the explosion accident in Tianjin Binhai
 \item \textbf{For problem 4:} Find a country where color revolutions have led to regime change, and use the model we have built to find the main causes of regime change.
 \item \textbf{For problem 5:} Put forward our team on the prevention of color revolution, maintain social stability recommendations.
 \end{itemize}
-\subsection{Our work}
+\subsection{Our Work}
 Previous research in this area has been very in-depth, and domestic research on the social stability index system is endless. Only then can we use its research results to solve the problems we encounter. Here's our work:
 
 Based on the theory of risk society and social governance, this paper summarizes the relevant literature of social stability and its measurement, and discusses the construction of social stability index and index system. 
@@ -60,14 +69,10 @@ Based on the research and analysis of social stability risk sources, a dimension
 Based on the determination of various indicators and weight distribution models of the social stability index, the research objects that have occurred in the color revolution were selected to evaluate their social stability, and the main risk factors affecting social stability in the color revolution were identified.
 \begin{figure}[htbp]
 \centering
-\begin{subfigure}[b]{\textwidth}
-\includegraphics[width=\textwidth]{img/our work.pdf}
-\end{subfigure}
+\includegraphics[width=.45\textwidth]{img/our work.pdf}
+\caption{Our Work}
 \end{figure}
-\section{Preparation of the Models}
-\subsection{Assumptions}
-
-\subsection{Notations}
+\section{Notations}
 The primary notations used in this paper are listed in Table \ref{tb:notation}.
 
 % 三线表示例
@@ -168,7 +173,7 @@ Thereinto,$k=1,2,\cdots ,p$,$s$ is the degree of affiliation. When the value of 
     \begin{equation}
         q_{Bi}=\sum_{k=1}^{p}e_ku_{ik}
     \end{equation}
-Thereinto,$q_{Bi}$ is the importance of the unascertained measure, and the importance vector of the unascertained measure $q=\{q_{B1}, q_{B2},\cdots , q_{Bn}\}$. The influence degree of the influencing factors is ranked by comparing the size of $\rm{q}$.
+Thereinto,$q_{Bi}$ is the importance of the unascertained measure, and the importance vector of the unascertained measure $q=\{q_{B1}, q_{B2},\cdots , q_{Bn}\}$. The influence degree of the influencing factors is ranked by comparing the size of \rm{$q$}.
 \end{enumerate}
 \subsection{ISM Model}
 ISM (Interpretive Structural Modeling) is a model that is developed to study complex systems. 
@@ -317,19 +322,11 @@ We scored the indicators based on the data we got and calculated the Social Risk
     \label{srd}
     \begin{tabular}{ccccc}
     \hline
-        SRD Value & [10,20) & [20,30) & [30,40) & [40,50] \\ \hline
+        SRD Value & [10,20) & [20,30) & [30,40) & [40,50] \\\hline 
         Alarm Level & No Alarm & Light Alarm & Medium Alarm & Heavy Alarm \\ 
-        Signal & Green & Blue & Yello & Red \\ \hline
+        Signal Level& Green Level& Blue Level& Yello Level& Red Level\\ \hline
     \end{tabular} 
 \end{table}
-
-
-
-
-
-
-
-
 \end{enumerate}
 
 
@@ -375,10 +372,54 @@ Social security is a more complex concept, and due to the broad nature of its co
 
 We believe that there is no absolute objectivity and reasonableness in the selection of indicators, of course, we cannot guarantee that the indicators we choose will be reasonable, but we read a lot of literature to ensure that our indicators are as objective and reasonable as possible within our ability.
 
-Social stability includes political stability, economic stability, normal social order and people's peace of mind. These aspects are interrelated, mutually influencing, interacting and inseparable. Political stability is the core of social stability as a whole, economic stability is the foundation of social stability as a whole, normal social order is a necessary condition for political stability and economic stability, and people's peace of mind is a comprehensive reflection of social stability. We divide the indicators into three categories, police source indicators, warning indicators and alarm indicators. According to the analytic hierarchy method, the indicator system is divided into target layer($A_i$), criterion layer($A_{ij}$) and indicator layer($A_{ijk}$). The specific meaning of each of these indicators is listed in Appendix.
-\begin{table}[!ht]\small
+Social stability includes political stability, economic stability, normal social order and people's peace of mind. These aspects are interrelated, mutually influencing, interacting and inseparable. Political stability is the core of social stability as a whole, economic stability is the foundation of social stability as a whole, normal social order is a necessary condition for political stability and economic stability, and people's peace of mind is a comprehensive reflection of social stability. We divide the indicators into three categories, police source indicators, warning indicators and alarm indicators. According to the analytic hierarchy method, the indicator system is divided into target layer($A_i$), criterion layer($A_{ij}$) and indicator layer($A_{ijk}$). The specific meaning of each of these indicators is listed in Figure \ref{zhibiao}.
+
+Since the standard layer is all consistent, there is a certain correlation between risk factors, so it is necessary to analyze the correlation between social stability risk factors.
+
+We have included our indicators in the Figure \ref{soi}:
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{.32\textwidth}
+\includegraphics[width=\textwidth]{1}
+\end{subfigure}
+\begin{subfigure}[b]{.32\textwidth}
+\includegraphics[width=\textwidth]{2}
+\end{subfigure}
+\begin{subfigure}[b]{.32\textwidth}
+\includegraphics[width=\textwidth]{3}
+\end{subfigure}
+\caption{Selection of Indicators}\label{soi}
+\end{figure}
+\subsection{Solution For Problem Two \& Establishment of Indicator System}
+Here in order to more intuitively show the two matrices we have obtained, we will show the \textbf{Direct Influence Matrix} \bm{$W$}, \textbf{Comprehensive Influence Matrix} \bm{$T$} and the \textbf{The Reachability Matrix} \bm{$M$} in the form of Heatmap in the Figure \ref{heatmap}:
+\begin{figure}[htbp]
+\centering
+\begin{subfigure}[b]{.32\textwidth}
+\includegraphics[width=\textwidth]{img/h2.eps}
+\caption{Matrix $W$}
+\end{subfigure}
+\begin{subfigure}[b]{.32\textwidth}
+\includegraphics[width=\textwidth]{4}
+\caption{Matrix $T$}
+\end{subfigure}
+\begin{subfigure}[b]{.32\textwidth}
+\includegraphics[width=\textwidth]{kdjz}
+\caption{Matrix $M$}
+\end{subfigure}
+\caption{Heatmaps of Each Matrixes}
+\label{heatmap}
+\end{figure}
+
+From the Heatmap above, we can easily see the relationship between the three indicators (1 in the matrix $M$ indicates that there is a relationship, 0 indicates that there is no relationship). According to our model, there is a positive correlation between the three indicators and the two indicators (we have carried out a positive treatment on the indicators).
+
+At this time, the \textbf{Index System} we get is: with the \textbf{Alert Indicator($A_1$, Weight 0.390)}, \textbf{Warning Indicator($A_2$, Weight 0.319)}, and \textbf{Alarm Indicators($A_3$, Weight 0.291)} as the Level 1 indicators. Their secondary indicators are \textbf{Accident Disaster($A_{i1}$, Weight 0.123), Social Crisis($A_{i2}$, Weight 0.245), Public Health Events($A_{i3}$, Weight 0.491) }and \textbf{Natural Disaster($A_{i4}$, Weight 0.142)} respectively. Level 3 indicators and their weights are listed in the Table \ref{zhibiao}:
+\newpage \newgeometry{headsep=0cm,bottom=0cm}
+\begin{table}[ht]
+%\small
     \centering
     \caption{The Meaning and Weight of Each Indicator}
+    \label{zhibiao}
+    \resizebox{\textwidth}{!}{
     \begin{tabular}{ccc}
         \hline
         Indicator & Indicator Layer &Weight\\ \hline
@@ -430,48 +471,9 @@ Social stability includes political stability, economic stability, normal social
         A342 & Property Damage Degree&0.029  \\ 
         A343 & Degree Of Direct Production Loss&0.051  \\ 
         A344 & Indirect Loss Degree Of Natural Disasters&0.016  \\ \hline
-    \end{tabular}
+    \end{tabular}}
 \end{table}
-
-Since the standard layer is all consistent, there is a certain correlation between risk factors, so it is necessary to analyze the correlation between social stability risk factors.
-
-We have included our indicators in the Figure \ref{soi}:
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{1}
-\end{subfigure}
-\begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{2}
-\end{subfigure}
-\begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{3}
-\end{subfigure}
-\caption{Selection of Indicators}\label{soi}
-\end{figure}
-\subsection{Establishment of Indicator System(Problem One)}
-Here in order to more intuitively show the two matrices we have obtained, we will show the \textbf{Direct Influence Matrix} \bm{$W$}, \textbf{Comprehensive Influence Matrix} \bm{$T$} and the \textbf{The Reachability Matrix} \bm{$M$} in the form of Heatmap in the Figure \ref{heatmap}:
-\begin{figure}[htbp]
-\centering
-\begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{img/h2.eps}
-\caption{Matrix $W$}
-\end{subfigure}
-\begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{4}
-\caption{Matrix $T$}
-\end{subfigure}
-\begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{kdjz}
-\caption{Matrix $M$}
-\end{subfigure}
-\caption{Heatmaps of Each Matrixes}
-\label{heatmap}
-\end{figure}
-
-From the Heatmap above, we can easily see the relationship between the three indicators (1 in the matrix $M$ indicates that there is a relationship, 0 indicates that there is no relationship). According to our model, there is a positive correlation between the three indicators and the two indicators (we have carried out a positive treatment on the indicators).
-
-At this time, the \textbf{Index System} we get is: with the \textbf{Alert Indicator($A_1$, Weight 0.390)}, \textbf{Warning Indicator($A_2$, Weight 0.319)}, and \textbf{Alarm Indicators($A_3$, Weight 0.291)} as the Level 1 indicators. Their secondary indicators are \textbf{Accident Disaster($A_{i1}$, Weight 0.123), Social Crisis($A_{i2}$, Weight 0.245), Public Health Events($A_{i3}$, Weight 0.491) }and \textbf{Natural Disaster($A_{i4}$, Weight 0.142)} respectively. Level 3 indicators and their weights are listed in the table.
+\restoregeometry
 \subsection{Solution For Problem Two}
 We have established a social stability early warning model, which only needs to be scored according to the actual situation of each indicator, and the stability level can be obtained according to the final situation. But how to determine the score of each indicator we still need to discuss as follows:
 
@@ -492,91 +494,96 @@ We believe that people feel safe about situations they can control and fear situ
 In the actual early warning, an event will have the above multiple attributes, so it is necessary to comprehensively analyze according to the specific situation and determine the early warning level of each indicator in the urban early warning indicator system.
 
 When we determine the score of the indicator, we only need to bring in Equation \ref{eq} to get the warning level.
+\section{Analysis of Problem Three \& Four}
+In previous studies, the understanding of the color revolution has been divided to a certain extent. This article selects and lists one example of Chinese and foreign scholars:
 
 
 
 
 
 
+\begin{center}
+\noindent\fbox{
+    \parbox{.9\linewidth}{\uline{\textbf{Zhu Xiaomin Summarized Five Characteristics of Color Revolutions:} \hfill }
+\begin{enumerate}
+\item It was instigated by the western forces led by the United States
+\item It mainly occurs in the CIS countries where the ruling leaders have a pro-Russian tendency
+\item It must be aimed at establishing a pro-American and pro-Western regime
+\item They are carried out under the banner of ``democracy''
+\item The ruling party and the opposition have no fundamental differences and differences between socialism and capitalism.
+\end{enumerate}}
+}
+\end{center}
+\begin{center}
+\noindent\fbox{
+    \parbox{.9\linewidth}{\uline{\textbf{Mark R. Beissinger Summarized Six Characteristics of Color Revolutions:} \hfill }
+\begin{enumerate}
+\item Using unfair elections as an opportunity for mass mobilization against pseudo-democratic regimes
+\item The support of external forces for the development of the democratic movement in the country 
+\item Using unconventional protest tactics before elections to organize radical youth movements in order to undermine the prestige of the regime and prepare for the final decisive battle 
+\item The united opposition established through external forces 
+\item external diplomatic pressure and unusually large-scale electronic regulation
+\item Mass mobilization after the announcement of false election results, using Gene Sharp's tactics of nonviolent resistance
+\end{enumerate}}
+}
+\end{center}
 
 
 
 
+Before we study the relationship between social stability and color revolutions, we must first clarify what color revolutions are, and we have found such a sentence:``The essence of color revolutions is that Western forces led by the United States illegally interfere in the internal affairs of other countries through non-governmental organizations and other forms''. Here we can analyze that the color revolution itself is not a natural occurrence of social instability or social crisis as our model says. But here we analyze and find that if the society is very stable, it will never allow the United States and other countries to take advantage of it. Therefore, in order to prevent the occurrence of color revolutions, it is also necessary to analyze social stability. In the face of the infiltration of foreign forces, we must fully enhance our country's ``immunity'' against color revolutions internally.
 
+As mentioned above, in order to study the relationship between regime change and social stability caused by color revolutions, we choose the two most representative color revolutions to analyze the specific social stability. The analysis of the color revolution in history by predecessors is quite perfect. We will not dwell on it here, but simply introduce the two revolutions as follows:
 
+\begin{itemize}
+\item \textbf{Ukraine's Orange Revolution} 
+\end{itemize}
+\begin{center}
+\noindent\fbox{
+    \parbox{.9\linewidth}{On November 21, 2004, then-Prime Minister Vichny Yanukovych won the election by a majority of votes in the second round. The opposition, also led by Yushchenko, rejected the election results as fraudulent, and a massive revolt broke out, with Yushchenko and his colleagues calling on the crowd to surround government buildings. Under the dual pressure of strong condemnation by the United States-led Western powers and domestic demonstrations, Yanukovych had to accept a second election, which Yushchenko won on December 26, 2004. The city of Kiev is decorated with orange chestnut flowers, and Yushchenko's campaign and supporters use orange as the logo color, so the "color revolution" in Ukraine is called the "orange revolution" or "chestnut flower revolution".}
+}
+\end{center}
 
+\begin{itemize}
+	\item \textbf{The First Belarusian Color Revolution}
+\end{itemize}
+\begin{center}
+\noindent\fbox{
+    \parbox{.9\linewidth}{In March 2006, the Belarusian presidential election, Alexander Lukashenko was overwhelmingly elected President of Belarus. Russian President Putin immediately congratulated Lukashenko and said the President of Belarus election process was legal, fair and transparent. Opposition demonstrations broke out in Minsk after the Belarusian opposition claimed Alexander Lukashenko had “Cheated” in the election, with the US and Europe rejecting the results, but the Belarusian ``Color revolution'' that the US and Europe had been waiting for was ultimately defeated.}
+}
+\end{center}
 
+We will use the Social Early Warning Model we have established to score the three-level indicators in our index system according to the historical data and historical evaluation of the two color revolutions. In order to determine the trend of their SRD Value and Alarm Level. This is our discussion on internal causes, and behind it, Western forces led by the United States are playing a driving role. We will explore their impact on regime change through our social stability and how to promote Western forces. Based on this, combined with the findings of previous studies, this paper discusses the causes of failure and the main factors affecting the success of regime change caused by their color revolution.
+\newpage 
+\section{Solution For Problem Three \& Four}
+Here we score according to the performance of each indicator during the two color revolutions, and then calculate the SRD Value according to the social stability early warning model we established, in order to visually show the changes of the two color revolution SRDs, we show it in the Figure \ref{data}:
+\begin{figure}[htbp]
+\centering
+\includegraphics[width=\textwidth]{img/data.eps}
+\caption{Changes Of Social Instability Index}
+\label{data}
+\end{figure}
 
+What we do know is that the color revolution in Belarus did not lead to regime change, and that this was reflected in social stability: \textbf{During this period, the social stability of Belarus did not change too dramatically, all within the Light Alarm range, showing periodic changes around the mean}.
 
+However, in Ukraine, the performance of regime change in the social stability index is: \textbf{The change over time showed an upward trend, the Alarm Level moved from Medium Alarm to Heavy Alarm, and the social warning model issued a red light alarm}.
 
+Here we can initially draw an inaccurate conclusion:
 
+\begin{center}
+\noindent\fbox{
+    \parbox{.9\linewidth}{\LARGE{\centering{Even a colour revolution is unlikely to lead to regime change if it does not destabilise society first.}}}
+}
+\end{center}
 
+Here we think of the earth's ecosystem, under the disturbance of external factors, the stability of the ecosystem is reduced, but we all know that the ecosystem has a certain ability to regulate, so here the social stability index changes periodically to be explained: the social stability system has a certain self-regulation ability, and the color revolution can reduce social stability, but does not exceed the regulatory limit, so it changes periodically around the mean.
 
+Analysing the social stability in Ukraine and Belarus separately, we conclude that the decisive factor was the success of the color revolution in Ukraine and the failure of the color revolution in Russia: whether the maximum tolerance limit of the social stability system was exceeded, that is, whether the current level of early warning was allowed to move the current level of warning across borders to the next warning level.
 
+But we can't say so arbitrarily, \textbf{social stability should be a necessary condition for the success of color revolutions, not a sufficient condition}. Let's go back to the note about color revolutions: ``Driven by the West, led by the United States''. Therefore, it can be seen that the external pressure on the stable system is also one of the influencing factors: this is the main guiding position in previous studies. Our relations with Western countries such as the United States today are self-explanatory.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
+At this point, we have learned that the main reason for the failure of the Belarusian color revolution is that it did not undermine its social stability, and the main reason for the Ukrainian color revolution is that the driving force of Western countries is strong enough, and the specific political factors involved are unknown to us here.
 \newpage
-
-
-
-
-
-
-
-\clearpage
-\subsubsection{Commetary on Model 2}
-The instance of long and wide tables are shown in Table \ref{tb:longtable}.
-
-% 长表格示例，更多用法请参考 longtable 宏包文档
-% 以下环境及对应参数可实现表格内的自动换行与表格的自动断页
-% 您也可以选择自行载入 tabularx 宏包，并通过 X 参数指定对应列自动换行
-\begin{longtable}{ p{4em} p{14em} p{14em} }
-\caption{Basic Information about Three Main Continents (scratched from Wikipedia)}
-\label{tb:longtable}\\
-\toprule
-Continent & Description & Information \\
-\midrule
-Africa & Africa Continent is surrounded by the Mediterranean Sea to the
-north, the Isthmus of Suez and the Red Sea to the northeast, the Indian
-Ocean to the southeast and the Atlantic Ocean to the west. &
-At about 30.3 million km$^2$ including adjacent islands, it covers 6\%
-of Earth's total surface area and 20\% of its land area. With 1.3
-billion people as of 2018, it accounts for about 16\% of the world's
-human population. \\
-\midrule
-Asia & Asia is Earth's largest and most populous continent which
-located primarily in the Eastern and Northern Hemispheres.
-It shares the continental landmass of Eurasia with the continent
-of Europe and the continental landmass of Afro-Eurasia with both
-Europe and Africa. &
-Asia covers an area of 44,579,000 square kilometres, about 30\%
-of Earth's total land area and 8.7\% of the Earth's total surface
-area. Its 4.5 billion people (as of June 2019) constitute roughly
-60\% of the world's population. \\
-\midrule
-Europe & Europe is a continent located entirely in the Northern
-Hemisphere and mostly in the Eastern Hemisphere. It comprises the
-westernmost part of Eurasia and is bordered by the Arctic Ocean to
-the north, the Atlantic Ocean to the west, the Mediterranean Sea to
-the south, and Asia to the east. &
-Europe covers about 10,180,000 km$^2$, or 2\% of the Earth's surface
-(6.8\% of land area), making it the second smallest
-continent. Europe had a total population of about 741 million (about
-11\% of the world population) as of 2018. \\
-\bottomrule
-\end{longtable}
 \section{Strengths and Weaknesses}
 \subsection{Strengths}
 \begin{itemize}
@@ -598,6 +605,109 @@ continent. Europe had a total population of about 741 million (about
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% The instance of long and wide tables are shown in Table \ref{tb:longtable}.
+
+% % 长表格示例，更多用法请参考 longtable 宏包文档
+% % 以下环境及对应参数可实现表格内的自动换行与表格的自动断页
+% % 您也可以选择自行载入 tabularx 宏包，并通过 X 参数指定对应列自动换行
+% \begin{longtable}{ p{4em} p{14em} p{14em} }
+% \caption{Basic Information about Three Main Continents (scratched from Wikipedia)}
+% \label{tb:longtable}\\
+% \toprule
+% Continent & Description & Information \\
+% \midrule
+% Africa & Africa Continent is surrounded by the Mediterranean Sea to the
+% north, the Isthmus of Suez and the Red Sea to the northeast, the Indian
+% Ocean to the southeast and the Atlantic Ocean to the west. &
+% At about 30.3 million km$^2$ including adjacent islands, it covers 6\%
+% of Earth's total surface area and 20\% of its land area. With 1.3
+% billion people as of 2018, it accounts for about 16\% of the world's
+% human population. \\
+% \midrule
+% Asia & Asia is Earth's largest and most populous continent which
+% located primarily in the Eastern and Northern Hemispheres.
+% It shares the continental landmass of Eurasia with the continent
+% of Europe and the continental landmass of Afro-Eurasia with both
+% Europe and Africa. &
+% Asia covers an area of 44,579,000 square kilometres, about 30\%
+% of Earth's total land area and 8.7\% of the Earth's total surface
+% area. Its 4.5 billion people (as of June 2019) constitute roughly
+% 60\% of the world's population. \\
+% \midrule
+% Europe & Europe is a continent located entirely in the Northern
+% Hemisphere and mostly in the Eastern Hemisphere. It comprises the
+% westernmost part of Eurasia and is bordered by the Arctic Ocean to
+% the north, the Atlantic Ocean to the west, the Mediterranean Sea to
+% the south, and Asia to the east. &
+% Europe covers about 10,180,000 km$^2$, or 2\% of the Earth's surface
+% (6.8\% of land area), making it the second smallest
+% continent. Europe had a total population of about 741 million (about
+% 11\% of the world population) as of 2018. \\
+% \bottomrule
+% \end{longtable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 % 以下为信件/备忘录部分，不需要可自行去掉
 % 如有需要可将整个 letter 环境移动到文章开头或中间
 % 请在第二个花括号内填写标题，如「信件」（Letter）或「备忘录」（Memorandum）
@@ -609,15 +719,7 @@ continent. Europe had a total population of about 741 million (about
 \textbf{Subject:} A better choice than MS Word: \LaTeX
 \end{flushleft}
 
-In the memo, we want to introduce you an alternate typesetting program to the prevailing MS Word: \textbf{\LaTeX}. In fact, the history of \LaTeX\ is even longer than that of MS Word. In 1970s, the famous computer scientist Donald Knuth first came out with a typesetting program, which named \TeX\ \ldots
 
-Firstly, \ldots
-
-Secondly, \ldots
-
-Lastly, \ldots
-
-According to all those mentioned above, it is really worth to have a try on \LaTeX! 
 \end{letter}
 
 
@@ -632,62 +734,7 @@ According to all those mentioned above, it is really worth to have a try on \LaT
 % 如您的论文中不需要附录，请自行删除
 \begin{subappendices}  % 附录环境
 \section{Appendix}
-\begin{table}[!ht]\small
-    \centering
-    \caption{The Meaning and Weight of Each Indicator}
-    \begin{tabular}{ccc}
-        \hline
-        Indicator & Indicator Layer &Weight\\ \hline
-        A111 & Enterprise Loss Degree &0.014 \\ 
-        A112 & Lack Of Investment In Urban Infrastructure &0.035 \\ 
-        A113 & $\mathcal{D}$ Consistency Between The Urban Environment And Production &0.056 \\ 
-        A114 & $\mathcal{D}$ Which Urban Policies Pay Attention To Production Safety &0.018 \\ 
-        A121 & Crime Rate &0.030 \\ 
-        A122 & Divorce Rate &0.099 \\ 
-        A123 & Income Difference Degree Of Urban Residents &0.093 \\ 
-        A124 & Urban Real Unemployment Rate &0.023 \\ 
-        A131 & Development Degree Of Urban Health Sector&0.093  \\ 
-        A132 & Concern About Urban Environmental Sanitation  &0.132\\ 
-        A133 & Defense Against External Public Health Events &0.206 \\ 
-        A134 & $\mathcal{D}$ Attention Paid By Urban Policies To Health Care &0.059 \\ 
-        A141 & Extent Of Urban External Environment Damage&0.066  \\ 
-        A142 & Climate Variability &0.022 \\ 
-        A143 & Potential Threat To Urban Geological Structure&0.011  \\ 
-        A144 &  Public Health&0.044 \\ 
-        A211 & Frequency Of Production Accidents&0.048  \\ 
-        A212 & Injury And Death Rate In Production Accidents&0.031  \\ 
-        A213 & Damage Of Urban Infrastructure&0.010 \\ 
-        A214 & Damage Degree Of Urban Infrastructure &0.034 \\ 
-        A221 & Dissatisfaction With Social Order &0.049 \\ 
-        A222 & Frequency Of Labor Disputes &0.057 \\ 
-        A223 & Degree Of Pollution And Damage Accidents &0.080 \\ 
-        A224 & Non-Institutionalized Group Development &0.059 \\ 
-        A231 & Potential Occurrence And Activity Of Public Health Events &0.250 \\ 
-        A232 & Active Degree Of Inducements For Public Health Events &0.184 \\ 
-        A233 & Main Factors Of Natural Disasters &0.034\\ 
-        A234 & Natural Disasters &0.023\\ 
-        A241 & Instability Of Natural Disasters &0.055 \\ 
-        A242 & Active Degree Of Main Factors Of Natural Disasters  &0.038\\ 
-        A243 & Active Degree Of Natural Disaster Inducing Factors  &0.043\\ 
-        A244 & Warfare Caused By Accidents And Disasters &0.007 \\ 
-        A311 & Life Loss Caused By Accidents And Disasters &0.068 \\ 
-        A312 & Economic Losses Caused By Accidents And Disasters  &0.055\\ 
-        A313 & Group Crime &0.016 \\ 
-        A314 & Group Fighting  &0.004\\ 
-        A321 & Frequency And Scale Of Group Crime And Fighting&0.115  \\ 
-        A322 & The Frequency And Scale Of Religious And Ethnic Conflicts &0.090 \\ 
-        A323 & Active Degree Of Natural Disaster Inducing Factors  &0.008\\ 
-        A324 & Warfare Caused By Public Health Events &0.009 \\ 
-        A331 & Life Loss Caused By Public Health Events &0.217\\ 
-        A332 & Economic Losses Caused By Public Health Events &0.159 \\ 
-        A333 & Psychological Problems Caused By Public Health Events &0.115 \\ 
-        A334 & Life Loss &0.003 \\ 
-        A341 & Degree Of Life Loss &0.046\\ 
-        A342 & Property Damage Degree&0.029  \\ 
-        A343 & Degree Of Direct Production Loss&0.051  \\ 
-        A344 & Indirect Loss Degree Of Natural Disasters&0.016  \\ \hline
-    \end{tabular}
-\end{table}
+
 
 \end{subappendices}  % 附录内容结束
 
