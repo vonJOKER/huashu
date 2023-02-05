@@ -4,7 +4,7 @@
 % 本模板不需要填写年份，以当前电脑时间自动生成
 % 请在以下的方括号中填写队伍控制号
 \usepackage[MI00008]{easymcm}  % 载入 EasyMCM 模板文件
-\problem{A}  % 请在此处填写题号
+\problem{B}  % 请在此处填写题号
  \usepackage{mathptmx}  % 这是 Times 字体，中规中矩 
 %\usepackage{mathpazo}  % 这是 COMAP 官方杂志采用的更好看的 Palatino 字体，可替代以上的 mathptmx 宏包
 \title{An MCM Paper Made by Team MI00008}  % 标题
@@ -293,11 +293,13 @@ Thereinto, $N\times N$ means the indirect relationship of increase, which includ
 Thereinto, $M_{ij}$ corresponding value in reachable matrix $M$. Here, we take $\lambda=0.15$ to judge.
 \end{enumerate}
 \subsection{Establishment of Early Warning Model}
+\label{ewm}
 \begin{enumerate}
 	\renewcommand{\labelenumi}{\textbf{Step \theenumi}}
 \item We have established an indicator system that affects social stability and determined the weights between each indicator, so that we can obtain the following formula for calculating the degree of social risk:
 \begin{equation}
 	SRD=\sum I_nW_n
+	\label{eq}
 \end{equation}
 Thereinto, $SRD$ represents the degree of social risk
 
@@ -374,59 +376,60 @@ Social security is a more complex concept, and due to the broad nature of its co
 We believe that there is no absolute objectivity and reasonableness in the selection of indicators, of course, we cannot guarantee that the indicators we choose will be reasonable, but we read a lot of literature to ensure that our indicators are as objective and reasonable as possible within our ability.
 
 Social stability includes political stability, economic stability, normal social order and people's peace of mind. These aspects are interrelated, mutually influencing, interacting and inseparable. Political stability is the core of social stability as a whole, economic stability is the foundation of social stability as a whole, normal social order is a necessary condition for political stability and economic stability, and people's peace of mind is a comprehensive reflection of social stability. We divide the indicators into three categories, police source indicators, warning indicators and alarm indicators. According to the analytic hierarchy method, the indicator system is divided into target layer($A_i$), criterion layer($A_{ij}$) and indicator layer($A_{ijk}$). The specific meaning of each of these indicators is listed in Appendix.
-\begin{table}[!ht]
+\begin{table}[!ht]\small
     \centering
-    \begin{tabular}{cr}
+    \caption{The Meaning and Weight of Each Indicator}
+    \begin{tabular}{ccc}
         \hline
-        Indicator & Indicator Layer  \\ \hline
-        A111 & Enterprise Loss Degree  \\ 
-        A112 & Lack Of Investment In Urban Infrastructure  \\ 
-        A113 & The Degree Of Consistency Between The Urban Environment And Production  \\ 
-        A114 & The Degree To Which Urban Policies Pay Attention To Production Safety  \\ 
-        A121 & Crime Rate  \\ 
-        A122 & Divorce Rate  \\ 
-        A123 & Income Difference Degree Of Urban Residents  \\ 
-        A124 & Urban Real Unemployment Rate  \\ 
-        A131 & Development Degree Of Urban Health Sector  \\ 
-        A132 & Concern About Urban Environmental Sanitation  \\ 
-        A133 & Defense Against External Public Health Events  \\ 
-        A134 & The Degree Of Attention Paid By Urban Policies To Health Care  \\ 
-        A141 & Extent Of Urban External Environment Damage  \\ 
-        A142 & Climate Variability  \\ 
-        A143 & Potential Threat To Urban Geological Structure  \\ 
-        A144 &  Public Health \\ 
-        A211 & Frequency Of Production Accidents  \\ 
-        A212 & Injury And Death Rate In Production Accidents  \\ 
-        A213 & Damage Of Urban Infrastructure \\ 
-        A214 & Damage Degree Of Urban Infrastructure  \\ 
-        A221 & Dissatisfaction With Social Order\_  \\ 
-        A222 & Frequency Of Labor Disputes  \\ 
-        A223 & Degree Of Pollution And Damage Accidents  \\ 
-        A224 & Non-Institutionalized Group Development  \\ 
-        A231 & Potential Occurrence And Activity Of Public Health Events  \\ 
-        A232 & Active Degree Of Inducements For Public Health Events  \\ 
-        A233 & Main Factors Of Natural Disasters \\ 
-        A234 & Natural Disasters \\ 
-        A241 & Instability Of Natural Disasters  \\ 
-        A242 & Active Degree Of Main Factors Of Natural Disasters  \\ 
-        A243 & Active Degree Of Natural Disaster Inducing Factors  \\ 
-        A244 & Warfare Caused By Accidents And Disasters  \\ 
-        A311 & Life Loss Caused By Accidents And Disasters  \\ 
-        A312 & Economic Losses Caused By Accidents And Disasters  \\ 
-        A313 & Group Crime  \\ 
-        A314 & Group Fighting  \\ 
-        A321 & Frequency And Scale Of Group Crime And Fighting  \\ 
-        A322 & The Frequency And Scale Of Religious And Ethnic Conflicts  \\ 
-        A323 & Active Degree Of Natural Disaster Inducing Factors  \\ 
-        A324 & Warfare Caused By Public Health Events  \\ 
-        A331 & Life Loss Caused By Public Health Events \\ 
-        A332 & Economic Losses Caused By Public Health Events  \\ 
-        A333 & Psychological Problems Caused By Public Health Events  \\ 
-        A334 & Life Loss  \\ 
-        A341 & Degree Of Life Loss  \\ 
-        A342 & Property Damage Degree  \\ 
-        A343 & Degree Of Direct Production Loss  \\ 
-        A344 & Indirect Loss Degree Of Natural Disasters  \\ \hline
+        Indicator & Indicator Layer &Weight\\ \hline
+        A111 & Enterprise Loss Degree &0.014 \\ 
+        A112 & Lack Of Investment In Urban Infrastructure &0.035 \\ 
+        A113 & The Degree Of Consistency Between The Urban Environment And Production &0.056 \\ 
+        A114 & The Degree To Which Urban Policies Pay Attention To Production Safety &0.018 \\ 
+        A121 & Crime Rate &0.030 \\ 
+        A122 & Divorce Rate &0.099 \\ 
+        A123 & Income Difference Degree Of Urban Residents &0.093 \\ 
+        A124 & Urban Real Unemployment Rate &0.023 \\ 
+        A131 & Development Degree Of Urban Health Sector&0.093  \\ 
+        A132 & Concern About Urban Environmental Sanitation  &0.132\\ 
+        A133 & Defense Against External Public Health Events &0.206 \\ 
+        A134 & The Degree Of Attention Paid By Urban Policies To Health Care &0.059 \\ 
+        A141 & Extent Of Urban External Environment Damage&0.066  \\ 
+        A142 & Climate Variability &0.022 \\ 
+        A143 & Potential Threat To Urban Geological Structure&0.011  \\ 
+        A144 &  Public Health&0.044 \\ 
+        A211 & Frequency Of Production Accidents&0.048  \\ 
+        A212 & Injury And Death Rate In Production Accidents&0.031  \\ 
+        A213 & Damage Of Urban Infrastructure&0.010 \\ 
+        A214 & Damage Degree Of Urban Infrastructure &0.034 \\ 
+        A221 & Dissatisfaction With Social Order &0.049 \\ 
+        A222 & Frequency Of Labor Disputes &0.057 \\ 
+        A223 & Degree Of Pollution And Damage Accidents &0.080 \\ 
+        A224 & Non-Institutionalized Group Development &0.059 \\ 
+        A231 & Potential Occurrence And Activity Of Public Health Events &0.250 \\ 
+        A232 & Active Degree Of Inducements For Public Health Events &0.184 \\ 
+        A233 & Main Factors Of Natural Disasters &0.034\\ 
+        A234 & Natural Disasters &0.023\\ 
+        A241 & Instability Of Natural Disasters &0.055 \\ 
+        A242 & Active Degree Of Main Factors Of Natural Disasters  &0.038\\ 
+        A243 & Active Degree Of Natural Disaster Inducing Factors  &0.043\\ 
+        A244 & Warfare Caused By Accidents And Disasters &0.007 \\ 
+        A311 & Life Loss Caused By Accidents And Disasters &0.068 \\ 
+        A312 & Economic Losses Caused By Accidents And Disasters  &0.055\\ 
+        A313 & Group Crime &0.016 \\ 
+        A314 & Group Fighting  &0.004\\ 
+        A321 & Frequency And Scale Of Group Crime And Fighting&0.115  \\ 
+        A322 & The Frequency And Scale Of Religious And Ethnic Conflicts &0.090 \\ 
+        A323 & Active Degree Of Natural Disaster Inducing Factors  &0.008\\ 
+        A324 & Warfare Caused By Public Health Events &0.009 \\ 
+        A331 & Life Loss Caused By Public Health Events &0.217\\ 
+        A332 & Economic Losses Caused By Public Health Events &0.159 \\ 
+        A333 & Psychological Problems Caused By Public Health Events &0.115 \\ 
+        A334 & Life Loss &0.003 \\ 
+        A341 & Degree Of Life Loss &0.046\\ 
+        A342 & Property Damage Degree&0.029  \\ 
+        A343 & Degree Of Direct Production Loss&0.051  \\ 
+        A344 & Indirect Loss Degree Of Natural Disasters&0.016  \\ \hline
     \end{tabular}
 \end{table}
 
@@ -446,7 +449,7 @@ We have included our indicators in the Figure \ref{soi}:
 \end{subfigure}
 \caption{Selection of Indicators}\label{soi}
 \end{figure}
-\subsection{Establishment of Indicator System}
+\subsection{Establishment of Indicator System(Problem One)}
 Here in order to more intuitively show the two matrices we have obtained, we will show the \textbf{Direct Influence Matrix} \bm{$W$}, \textbf{Comprehensive Influence Matrix} \bm{$T$} and the \textbf{The Reachability Matrix} \bm{$M$} in the form of Heatmap in the Figure \ref{heatmap}:
 \begin{figure}[htbp]
 \centering
@@ -467,6 +470,33 @@ Here in order to more intuitively show the two matrices we have obtained, we wil
 \end{figure}
 
 From the Heatmap above, we can easily see the relationship between the three indicators (1 in the matrix $M$ indicates that there is a relationship, 0 indicates that there is no relationship). According to our model, there is a positive correlation between the three indicators and the two indicators (we have carried out a positive treatment on the indicators).
+
+At this time, the \textbf{Index System} we get is: with the \textbf{Alert Indicator($A_1$, Weight 0.390)}, \textbf{Warning Indicator($A_2$, Weight 0.319)}, and \textbf{Alarm Indicators($A_3$, Weight 0.291)} as the Level 1 indicators. Their secondary indicators are \textbf{Accident Disaster($A_{i1}$, Weight 0.123), Social Crisis($A_{i2}$, Weight 0.245), Public Health Events($A_{i3}$, Weight 0.491) }and \textbf{Natural Disaster($A_{i4}$, Weight 0.142)} respectively. Level 3 indicators and their weights are listed in the table.
+\subsection{Solution For Problem Two}
+We have established a social stability early warning model, which only needs to be scored according to the actual situation of each indicator, and the stability level can be obtained according to the final situation. But how to determine the score of each indicator we still need to discuss as follows:
+
+Four aspects should be considered to determine the early warning level:
+\subsubsection{Characteristic}
+According to the predictability of its occurrence, it can be divided into sudden and recurrent. Due to their unpredictability, emergencies often have a strong impact on the people after they occur, thereby endangering social security and stability. Because regular events occur more frequently, the people have a certain ability to bear them, so when they occur, the intensity of the impact is less than that of sudden events. From the perspective of foreseeability, the warning level of sudden events should be higher than that of recurring events.
+
+According to the relationship between its harm and residents, it can be divided into direct harm and indirect harm. As the direct hazard type is directly aimed at the personal safety of residents, it will cause great panic to residents once it occurs. The indirect hazard type will not directly threaten the personal safety of residents, so it is not easy to cause huge panic. As for the relationship between hazards and residents, the warning level of direct hazards should be higher than that of indirect hazards.
+
+Considering the two kinds of nature of early warning events. From high to low, the early warning levels are \textbf{Sudden Direct Harm Type, Regular Direct Harm Type, Sudden Indirect Harm Type} and \textbf{Daily Indirect Harm Type}.
+\subsubsection{Severity}
+We have determined the severity of the incident in three respects: the level of threat to \textbf{The Lives of The Population, The Magnitude of The Economic Damage} and \textbf{The Potential of Further Harm}.
+\subsubsection{Scope of Influence}
+We believe that the influence scope can be measured from three aspects: \textbf{The Number of People Affected, The Impact of The Spatial Scope} and \textbf{The Impact of Psychological Degree}. The higher the number of residents involved in the incident, the higher the level of early warning; the greater the spatial scope of the incident, the higher the level of early warning; the stronger the psychological impact of the incident on the residents, the higher the level of early warning.
+\subsubsection{Controllability}
+We believe that people feel safe about situations they can control and fear situations they can't control, so event controllability affects the level of warning. The higher the degree of uncontrollability, the higher the warning level, and if it is completely out of control, it is extremely dangerous. Event controllability is measured from two aspects, namely, \textbf{The Understanding and Mastery of Relevant Factors} and \text{The Timely and Effective Degree of Measures}.
+
+In the actual early warning, an event will have the above multiple attributes, so it is necessary to comprehensively analyze according to the specific situation and determine the early warning level of each indicator in the urban early warning indicator system.
+
+When we determine the score of the indicator, we only need to bring in Equation \ref{eq} to get the warning level.
+
+
+
+
+
 
 
 
@@ -601,50 +631,63 @@ According to all those mentioned above, it is really worth to have a try on \LaT
 % 以下为附录内容
 % 如您的论文中不需要附录，请自行删除
 \begin{subappendices}  % 附录环境
-\section{Appendix A: Specific Meanings of Indicators}
-\label{a1}
-To clarify the importance of using \LaTeX\ in MCM or ICM, several points need to be covered, which are \ldots
-
-To be more specific, \ldots
-
-All in all, \ldots
-
-Anyway, nobody \textbf{really} needs such appendix \ldots
-
-\section{Appendix B: Program Codes}
-Here are the program codes we used in our research.
-
-% 代码环境示例三则
-% 如您的论文不需要展示代码，请删除
-% 更多用法，请参考 listings 宏包文档
-
-% Python 代码示例
-\begin{lstlisting}[language=Python, name={test.py}]
-# Python code example
-for i in range(10):
-    print('Hello, world!')
-\end{lstlisting}
-
-% MATLAB 代码示例
-\begin{lstlisting}[language=MATLAB, name={test.m}]
-% MATLAB code example
-for i = 1:10
-    disp("hello, world!");
-end
-\end{lstlisting}
-
-% C++ 代码示例
-\begin{lstlisting}[language=C++, name={test.cpp}]
-// C++ code example
-#include <iostream>
-using namespace std;
-
-int main() {
-    for (int i = 0; i < 10; i++)
-        cout << "hello, world" << endl;
-    return 0;
-}
-\end{lstlisting}
+\section{Appendix}
+\begin{table}[!ht]\small
+    \centering
+    \caption{The Meaning and Weight of Each Indicator}
+    \begin{tabular}{ccc}
+        \hline
+        Indicator & Indicator Layer &Weight\\ \hline
+        A111 & Enterprise Loss Degree &0.014 \\ 
+        A112 & Lack Of Investment In Urban Infrastructure &0.035 \\ 
+        A113 & $\mathcal{D}$ Consistency Between The Urban Environment And Production &0.056 \\ 
+        A114 & $\mathcal{D}$ Which Urban Policies Pay Attention To Production Safety &0.018 \\ 
+        A121 & Crime Rate &0.030 \\ 
+        A122 & Divorce Rate &0.099 \\ 
+        A123 & Income Difference Degree Of Urban Residents &0.093 \\ 
+        A124 & Urban Real Unemployment Rate &0.023 \\ 
+        A131 & Development Degree Of Urban Health Sector&0.093  \\ 
+        A132 & Concern About Urban Environmental Sanitation  &0.132\\ 
+        A133 & Defense Against External Public Health Events &0.206 \\ 
+        A134 & $\mathcal{D}$ Attention Paid By Urban Policies To Health Care &0.059 \\ 
+        A141 & Extent Of Urban External Environment Damage&0.066  \\ 
+        A142 & Climate Variability &0.022 \\ 
+        A143 & Potential Threat To Urban Geological Structure&0.011  \\ 
+        A144 &  Public Health&0.044 \\ 
+        A211 & Frequency Of Production Accidents&0.048  \\ 
+        A212 & Injury And Death Rate In Production Accidents&0.031  \\ 
+        A213 & Damage Of Urban Infrastructure&0.010 \\ 
+        A214 & Damage Degree Of Urban Infrastructure &0.034 \\ 
+        A221 & Dissatisfaction With Social Order &0.049 \\ 
+        A222 & Frequency Of Labor Disputes &0.057 \\ 
+        A223 & Degree Of Pollution And Damage Accidents &0.080 \\ 
+        A224 & Non-Institutionalized Group Development &0.059 \\ 
+        A231 & Potential Occurrence And Activity Of Public Health Events &0.250 \\ 
+        A232 & Active Degree Of Inducements For Public Health Events &0.184 \\ 
+        A233 & Main Factors Of Natural Disasters &0.034\\ 
+        A234 & Natural Disasters &0.023\\ 
+        A241 & Instability Of Natural Disasters &0.055 \\ 
+        A242 & Active Degree Of Main Factors Of Natural Disasters  &0.038\\ 
+        A243 & Active Degree Of Natural Disaster Inducing Factors  &0.043\\ 
+        A244 & Warfare Caused By Accidents And Disasters &0.007 \\ 
+        A311 & Life Loss Caused By Accidents And Disasters &0.068 \\ 
+        A312 & Economic Losses Caused By Accidents And Disasters  &0.055\\ 
+        A313 & Group Crime &0.016 \\ 
+        A314 & Group Fighting  &0.004\\ 
+        A321 & Frequency And Scale Of Group Crime And Fighting&0.115  \\ 
+        A322 & The Frequency And Scale Of Religious And Ethnic Conflicts &0.090 \\ 
+        A323 & Active Degree Of Natural Disaster Inducing Factors  &0.008\\ 
+        A324 & Warfare Caused By Public Health Events &0.009 \\ 
+        A331 & Life Loss Caused By Public Health Events &0.217\\ 
+        A332 & Economic Losses Caused By Public Health Events &0.159 \\ 
+        A333 & Psychological Problems Caused By Public Health Events &0.115 \\ 
+        A334 & Life Loss &0.003 \\ 
+        A341 & Degree Of Life Loss &0.046\\ 
+        A342 & Property Damage Degree&0.029  \\ 
+        A343 & Degree Of Direct Production Loss&0.051  \\ 
+        A344 & Indirect Loss Degree Of Natural Disasters&0.016  \\ \hline
+    \end{tabular}
+\end{table}
 
 \end{subappendices}  % 附录内容结束
 
