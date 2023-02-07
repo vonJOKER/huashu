@@ -7,8 +7,11 @@
 \problem{B}  % 请在此处填写题号
  \usepackage{mathptmx}  % 这是 Times 字体，中规中矩 
 %\usepackage{mathpazo}  % 这是 COMAP 官方杂志采用的更好看的 Palatino 字体，可替代以上的 mathptmx 宏包
-\title{An MCM Paper Made by Team MI00008}  % 标题
+\title{ Color Revolutions Are Bound To Fail}  % 标题
 \usepackage{enumerate}
+
+
+
 % 如需要修改题头（默认为 MCM/ICM），请使用以下命令（此处修改为 MCM）
 %\renewcommand{\contest}{MCM}
 \usepackage{bm}
@@ -16,22 +19,28 @@
 \usepackage{ulem}
 \usepackage{geometry}
 \usepackage{framed} 
+\usepackage{mathrsfs}
+\usepackage{lettrine}
+\usepackage{wasysym}
 % 文档开始
 \begin{document}
 
 % 此处填写摘要内容
 \begin{abstract}
-    Here is the abstract of your paper.
-    Firstly, that is ...
+   At the beginning of the 21st century, the wave of "color revolutions" quickly swept through the post-Soviet space and caused widespread political turmoil among Eurasian countries. Over the years, academic circles at home and abroad have conducted relatively in-depth research on the rise and spread of the "color revolution". However, looking at the research results, it seems that the relationship between color revolutions and social stability has not been explored, which will be briefly discussed in this article.
 
-    Secondly, that is ...
+First of all, based on the research results of predecessors, supported by a large number of literature, we continue to view the grading of indicators, find 48 third-level indicators that affect social stability factors, classify them, determine their second-level indicators, and then divide them into police indicators, warning indicators and police source indicators.
 
-    Finally, that is ...
+Immediately afterwards, we first determined the weights of the first-level indicators and second-level indicators according to the literature analysis method, and since the sources of the third-level indicators are different, we introduce the concept of confidence, score them by the undetermined measure theory model, and then multiply the weights of the third-level indicators with their corresponding higher-level indicators to obtain the weight vectors of 48 third-level indicators. Then, in order to obtain whether there is a correlation between the three levels of indicators, we find that the DEMATEL-ISM model can handle it more conveniently, because we do not have high requirements for the confidence of the indicator to see the correlation, so the resulting Boolean matrix is enough to show the correlation between them.
 
-    % 美赛论文中无需注明关键字。若您一定要使用，
-    % 请将以下两行的注释号 '%' 去除，以使其生效
+The next step is to establish an early warning model for social stability. Following international practice, we have divided the warning Level into four levels: Green Level, Blue Level, Yello Level and Red Level. In this way, we can calculate the SRD Value by calculating the scores of various indicators and compare it with the control, so that we can assess the social stability level and even make an early warning.
+
+Finally, we discussed the correlation between color revolutions and social stability, and came to a preliminary conclusion: the collapse of the social stability system is a sufficient and unnecessary condition for the success of color revolutions. We have selected two of the most representative color revolutions: Ukraine and Belarus, and believe that the fundamental reason for the failure of the Belarusian color revolution is that it did not undermine its social stability, and that the main reason for the success of the Ukrainian color revolution leading to regime change was the bloodless intervention of the US-led NATO forces in its regime.
+
+In conclusion, we offer our views on how to prevent the color revolution in combination with the literature (see the MEMO for the details) , pointing out the strengths and weaknesses of our theoretical model and what future researchers need to continue to do.
+    
     \vspace{5pt}
-    \textbf{Keywords}: MATLAB, mathematics, LaTeX.
+    \textbf{Keywords}:Unascertained Measure Model, DEMATEL-ISM Model, Early Warning Model, Color Revolution
 
 \end{abstract}
 
@@ -62,14 +71,14 @@ In the past two decades, the ``Color revolution'' has not been abated. Instead, 
 \subsection{Our Work}
 Previous research in this area has been very in-depth, and domestic research on the social stability index system is endless. Only then can we use its research results to solve the problems we encounter. Here's our work:
 
-Based on the theory of risk society and social governance, this paper summarizes the relevant literature of social stability and its measurement, and discusses the construction of social stability index and index system. 
+{\LARGE\CheckedBox} Based on the theory of risk society and social governance, this paper summarizes the relevant literature of social stability and its measurement, and discusses the construction of social stability index and index system. 
 
-Based on the research and analysis of social stability risk sources, a dimensional model of social stability index was constructed. Then, according to the principles of data availability, scientificity, and operability, specific indicators are set and selected, and a complete index system framework is gradually built to analyze the actual operation and results of the social stability index.
+{\LARGE\CheckedBox} Based on the research and analysis of social stability risk sources, a dimensional model of social stability index was constructed. Then, according to the principles of data availability, scientificity, and operability, specific indicators are set and selected, and a complete index system framework is gradually built to analyze the actual operation and results of the social stability index.
 
-Based on the determination of various indicators and weight distribution models of the social stability index, the research objects that have occurred in the color revolution were selected to evaluate their social stability, and the main risk factors affecting social stability in the color revolution were identified.
+{\LARGE\CheckedBox} Based on the determination of various indicators and weight distribution models of the social stability index, the research objects that have occurred in the color revolution were selected to evaluate their social stability, and the main risk factors affecting social stability in the color revolution were identified.
 \begin{figure}[htbp]
 \centering
-\includegraphics[width=.45\textwidth]{img/our work.pdf}
+\includegraphics[width=.4\textwidth]{img/our work.pdf}
 \caption{Our Work}
 \end{figure}
 \section{Notations}
@@ -127,9 +136,9 @@ If there is $c_1>c_2>\cdots >c_p$ or $c_1<c_2<\cdots <c_P$, then $c_1, c_2,\cdot
 \end{eqnarray}
 Thereinto, $i=1,2,\cdots ,m$
 
-\hspace{4.5em}$j=1,2,\cdots ,n$
+\hspace{4.25em}$j=1,2,\cdots ,n$
 
-\hspace{4.5em}$k=1,2,\cdots ,p$.\\
+\hspace{4.25em}$k=1,2,\cdots ,p$.\\
 Thereinto, Equation \ref{e1} represents ``non-negative boundedness'', Equation \ref{e2} represents ``normalization'', Equation \ref{e3} represents ``additivity''. The $u$ that simultaneously satisfies the Equation \ref{e1} to Equation \ref{e3} is called an unascertained measure, and has a single index measure matrix $(u_{ijk})_{n\times p}$:
 \begin{equation}
     (u_{ijk})_{n\times p}=\begin{bmatrix}
@@ -145,9 +154,9 @@ Thereinto, Equation \ref{e1} represents ``non-negative boundedness'', Equation \
 \end{equation}
 Thereinto, $i=1,2,\cdots ,m$
 
-\hspace{4.5em}$j=1,2,\cdots ,n$
+\hspace{4.25em}$j=1,2,\cdots ,n$
 
-\hspace{4.5em}$k=1,2,\cdots ,p$.
+\hspace{4.25em}$k=1,2,\cdots ,p$.
 \item Calculate $u$ as:
 \begin{eqnarray}
     &0\le u_{ik}\le 1\\
@@ -238,13 +247,13 @@ statistical distribution is more objective, which can reduce the influence of su
 \end{equation}
 Thereinto, if $H_{ij}>\lambda$ ,then $H_{ij}=1$ 
 
-\hspace{4.5em} if $H_{ij}\le \lambda$ ,then $H_{ij}=0$ .
+\hspace{4.35em}if $H_{ij}\le \lambda$ ,then $H_{ij}=0$ .
 \item  According to the reachability matrix, the reachability set $R_i$ and antecedent set $S_i$ of each 
 influencing factor are determined.\\ 
 Thereinto, $R_i$ is composed of the index set corresponding to all the 
 columns with index 1 in the ith row of the reachable matrix
 
-\hspace{4.5em} $S_i$ consists of the set of indices 
+\hspace{4.25em} $S_i$ consists of the set of indices 
 corresponding to all rows with index 1 in the ith column of the reachable matrix.
 \item Verify:
 \begin{equation}
@@ -308,11 +317,11 @@ Thereinto, $M_{ij}$ corresponding value in reachable matrix $M$. Here, we take $
 \end{equation}
 Thereinto, $SRD$ represents the degree of social risk
 
-\hspace{4.5em}$n$ is the serial number of the indicator and its weight
+\hspace{4.25em}$n$ is the serial number of the indicator and its weight
 
-\hspace{4.5em}$I$ represents the indicator
+\hspace{4.25em}$I$ represents the indicator
 
-\hspace{4.5em}$W$ represents the weight of the indicator in the entire social risk early warning indicator system.
+\hspace{4.25em}$W$ represents the weight of the indicator in the entire social risk early warning indicator system.
 \item Each indicator in the indicator system uses a five-level scoring method, that is, five values are set according to the size of the indicator value: 10, 20, 30, 40 and 50. The size of the indicator value is directly proportional to the degree of social risk. In this way, we can measure the degree of social risk through the above formula for calculating the degree of social risk and identify it with corresponding early warning signals.
 
 We scored the indicators based on the data we got and calculated the Social Risk Degree(SRD).By consulting the data, we divide the warning level,there are shown in Table \ref{srd}:
@@ -380,13 +389,13 @@ We have included our indicators in the Figure \ref{soi}:
 \begin{figure}[htbp]
 \centering
 \begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{1}
+\includegraphics[width=\textwidth]{img/1.pdf}
 \end{subfigure}
 \begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{2}
+\includegraphics[width=\textwidth]{img/2.pdf}
 \end{subfigure}
 \begin{subfigure}[b]{.32\textwidth}
-\includegraphics[width=\textwidth]{3}
+\includegraphics[width=\textwidth]{img/3.pdf}
 \end{subfigure}
 \caption{Selection of Indicators}\label{soi}
 \end{figure}
@@ -413,7 +422,7 @@ Here in order to more intuitively show the two matrices we have obtained, we wil
 From the Heatmap above, we can easily see the relationship between the three indicators (1 in the matrix $M$ indicates that there is a relationship, 0 indicates that there is no relationship). According to our model, there is a positive correlation between the three indicators and the two indicators (we have carried out a positive treatment on the indicators).
 
 At this time, the \textbf{Index System} we get is: with the \textbf{Alert Indicator($A_1$, Weight 0.390)}, \textbf{Warning Indicator($A_2$, Weight 0.319)}, and \textbf{Alarm Indicators($A_3$, Weight 0.291)} as the Level 1 indicators. Their secondary indicators are \textbf{Accident Disaster($A_{i1}$, Weight 0.123), Social Crisis($A_{i2}$, Weight 0.245), Public Health Events($A_{i3}$, Weight 0.491) }and \textbf{Natural Disaster($A_{i4}$, Weight 0.142)} respectively. Level 3 indicators and their weights are listed in the Table \ref{zhibiao}:
-\newpage \newgeometry{headsep=0cm,bottom=0cm}
+\newpage 
 \begin{table}[ht]
 %\small
     \centering
@@ -540,7 +549,7 @@ As mentioned above, in order to study the relationship between regime change and
 \end{itemize}
 \begin{center}
 \noindent\fbox{
-    \parbox{.9\linewidth}{On November 21, 2004, then-Prime Minister Vichny Yanukovych won the election by a majority of votes in the second round. The opposition, also led by Yushchenko, rejected the election results as fraudulent, and a massive revolt broke out, with Yushchenko and his colleagues calling on the crowd to surround government buildings. Under the dual pressure of strong condemnation by the United States-led Western powers and domestic demonstrations, Yanukovych had to accept a second election, which Yushchenko won on December 26, 2004. The city of Kiev is decorated with orange chestnut flowers, and Yushchenko's campaign and supporters use orange as the logo color, so the "color revolution" in Ukraine is called the "orange revolution" or "chestnut flower revolution".}
+    \parbox{.9\linewidth}{~~~~On November 21, 2004, then-Prime Minister Vichny Yanukovych won the election by a majority of votes in the second round. The opposition, also led by Yushchenko, rejected the election results as fraudulent, and a massive revolt broke out, with Yushchenko and his colleagues calling on the crowd to surround government buildings. Under the dual pressure of strong condemnation by the United States-led Western powers and domestic demonstrations, Yanukovych had to accept a second election, which Yushchenko won on December 26, 2004. The city of Kiev is decorated with orange chestnut flowers, and Yushchenko's campaign and supporters use orange as the logo color, so the "color revolution" in Ukraine is called the "orange revolution" or "chestnut flower revolution".}
 }
 \end{center}
 
@@ -549,7 +558,7 @@ As mentioned above, in order to study the relationship between regime change and
 \end{itemize}
 \begin{center}
 \noindent\fbox{
-    \parbox{.9\linewidth}{In March 2006, the Belarusian presidential election, Alexander Lukashenko was overwhelmingly elected President of Belarus. Russian President Putin immediately congratulated Lukashenko and said the President of Belarus election process was legal, fair and transparent. Opposition demonstrations broke out in Minsk after the Belarusian opposition claimed Alexander Lukashenko had “Cheated” in the election, with the US and Europe rejecting the results, but the Belarusian ``Color revolution'' that the US and Europe had been waiting for was ultimately defeated.}
+    \parbox{.9\linewidth}{~~~~In March 2006, the Belarusian presidential election, Alexander Lukashenko was overwhelmingly elected President of Belarus. Russian President Putin immediately congratulated Lukashenko and said the President of Belarus election process was legal, fair and transparent. Opposition demonstrations broke out in Minsk after the Belarusian opposition claimed Alexander Lukashenko had “Cheated” in the election, with the US and Europe rejecting the results, but the Belarusian ``Color revolution'' that the US and Europe had been waiting for was ultimately defeated.}
 }
 \end{center}
 
@@ -583,20 +592,52 @@ Analysing the social stability in Ukraine and Belarus separately, we conclude th
 But we can't say so arbitrarily, \textbf{social stability should be a necessary condition for the success of color revolutions, not a sufficient condition}. Let's go back to the note about color revolutions: ``Driven by the West, led by the United States''. Therefore, it can be seen that the external pressure on the stable system is also one of the influencing factors: this is the main guiding position in previous studies. Our relations with Western countries such as the United States today are self-explanatory.
 
 At this point, we have learned that the main reason for the failure of the Belarusian color revolution is that it did not undermine its social stability, and the main reason for the Ukrainian color revolution is that the driving force of Western countries is strong enough, and the specific political factors involved are unknown to us here.
+But from the literature of previous people, we found such a passage:
+\begin{center}
+\indent \fbox{
+    \parbox{.9\linewidth}{
+    ~~~~The game between Russia and the United States. The outbreak of the ``Orange Revolution'' was largely due to the interference of external forces in Ukraine's internal affairs. There are four major participants: the United States, Russia, the European Union, and the ``New Europe'' countries - Poland and Lithuania, which are independent participants.\par
+
+~~~~The fundamental difference between Western and Russian influence lies in different political mechanisms and social ideologies. The position of the United States and European countries on Ukraine is quite clear. 
+
+~~$\bullet$~~Firstly, for more than a decade they have been conducting a targeted campaign to form a pro-Western Ukrainian elite, especially with the training of a large number of specialists and journalists, which turned out to be very effective. 
+
+~~$\bullet$~~Secondly, officials in the United States and the European Union have taken extremely favorable positions to ensure transparency and democracy in the electoral process. 
+
+~~$\bullet$~~Thirdly, in the situation of the Ukrainian crisis, the United States, the European Union, Poland and Lithuania smoothly became active mediators in the negotiations and provided sufficient information, diplomatic and special support for their actions. Western officials, while ensuring that their interests are realized, have also maintained their image of non-interference in the internal affairs of other countries. Thus, the pro-Western forces in Ukraine received substantial blessings.
+    }
+}
+\end{center}
+
+From the author's attitude, that is, the content, it is easy to see the main factors for the success of the Ukrainian color revolution, and we will not repeat it.
 \newpage
-\section{Strengths and Weaknesses}
-\subsection{Strengths}
+\section{Conclusion}
+\subsection{Strengths And Weaknesses}
+Our research is basically based on the predecessors, and there are some improvements and shortcomings as follows:
+\subsubsection{Strengths}
 \begin{itemize}
-    \item First one...
-    \item Second one ...
+    \item In the establishment of the index system of social stability, we find that the basic methods used by predecessors include analytic hierarchy process, questionnaire survey, Expert review, literature review and so on. We combine previous literature to determine the weight of each indicator will lead to our indicator system does not have a good standard. Here we use the unascertained measure theory model and introduce the concept of confidence degree, which can transform the weight of the index in different literatures into the more reliable weight of our index system, get the weight vector for the metric we need.
+    \item Since there are 48 indicators in our indicator system, the correlation between indicators is difficult to give by correlation analysis. DEMATE is suitable for system analysis with many variables, complex relationships and unclear structure, and can also be used for the ordering of schemes. ISM can also be used. Here we boldly combine the two models, because we do not have high requirements for the relationship between variables, ISM can also effectively achieve this goal: the final Boolean matrix has only two values, true or false.
+    \item Due to space limitations, we did not show the relationship matrix between indicators in the paper but turned it into the form of a heat map, which more intuitively shows the results of our model, and can directly find out whether there is a relationship between two factors in that figure.
 \end{itemize}
 
-\subsection{Weaknesses}
+\subsubsection{Weaknesses}
 \begin{itemize}
-    \item Only one ...
+    \item To a certain extent, the relationship between the elements of a system depends on people's experience. Insufficient objectivity Many of the papers we have consulted are not perfect in the selection of indicators, so the weight vectors obtained by our unknown measure theory may not be very accurate.
+    \item There are too many indicators established by the indicator system, so we can only give the general relationship between indicators by using the DEMATEL-ISM method, but cannot draw a multi-level hierarchical directed topology diagram according to the relationship between indicators. Even if we give the relationship between them as a heat map, it is not intuitive to feel it in layers.
+    \item Our analysis of the influencing factors of the color revolution is relatively superficial, because the political factors and diplomatic factors designed in it are full of unknowns, and the research of predecessors is seriously differentiated: it is reflected in the great disagreement on whether it is a color revolution.
+    \item Because the concept of color revolution is not very clear, we can only select the most representative of them, and all parties have made social stability judgment and influencing factor analysis of the two cases identified as color revolutions.
+    \item Due to the subjectivity of the social stability scores of the two color revolutions we selected, the subsequent analysis of the reasons for the change of regime caused by the color revolutions is also based on the discussion, and cannot give the actual influencing factors well. Of course, this is also beyond the scope on this paper.
  \end{itemize}
+\subsection{Future Work}
+With the world entering a new period of turbulence and change, the ``color revolution'' is still an important topic worth discussing. The western forces led by the United States have not abandoned the ``democratic export'', have not stopped the attempts to subvert the regimes of other countries or regions, and the threat will not disappear. The ``color revolution'' itself is also in the process of constant change. We should look at the problem from the perspective of development, observe and understand it with the times, and formulate corresponding preventive measures. 
 
-
+Just as people could not predict the new changes brought by information technology to the ``color revolution'' more than a decade ago, it is not ruled out that the future ``color revolution'' will continue to change in connotation or take on unexpected new features.Our research on the color revolution needs to be further deepened.
+\begin{itemize}
+	\item The indicators that affect social stability are far more than that, we only list the representative, which inevitably duplicate or missing indicators, and China has undergone earth-shaking changes, and the future needs to update the indicator system and the weight of each indicator in real time to conform to the trend of the times.
+	\item The social early warning model we established did not judge the trend of future development, but only found that the stability index changed periodically, and the future research in this area can continue to be deepened.
+	\item In the future, it is also necessary to unify the division and judgment of color revolutions, so that the relevant color revolutions can be systematically analyzed more rigorously.
+\end{itemize}
 
 
 
@@ -711,32 +752,229 @@ At this point, we have learned that the main reason for the failure of the Belar
 % 以下为信件/备忘录部分，不需要可自行去掉
 % 如有需要可将整个 letter 环境移动到文章开头或中间
 % 请在第二个花括号内填写标题，如「信件」（Letter）或「备忘录」（Memorandum）
-\begin{letter}{Memorandum}
+\begin{letter}{\huge{$\mathscr{MEMO}$}}
 \begin{flushleft}  % 左对齐环境，无首行缩进
-\textbf{To:} Heishan Yan\\
-\textbf{From:} Team 1234567\\
-\textbf{Date:} October 1st, 2019\\
-\textbf{Subject:} A better choice than MS Word: \LaTeX
+\textbf{To:} MCM/ICM organizing committee\\
+\textbf{From:} Team MI00008\\
+\textbf{Date:}\today\\
+\textbf{Subject:} In order to prevent colorr evolution and maintain social stability
 \end{flushleft}
+\lettrine{T}{he} second ``color revolution'' in Ukraine shows that ``color revolution'' is probably not a concept in the historical past tense. Looking through the ``color revolution'', we can find that although its form has undergone two major transmutations in the past ten years, there are still clues to its connotation. No matter how the pattern changes, the ``color revolution'' is still an anti-government movement instigated by international powers against the target country or region according to their strategic interests, which take advantage of domestic political and economic contradictions and use the people's social resistance movement to try to overthrow the current regime of a country.
+
+And not every country is helpless in the face of the encroachment of ``color revolutions''. Uzbekistan, Belarus and other countries have successfully resisted ``color revolutions''. From their experience, we can roughly summarize a few suggestions:
+
+{\itshape \begin{enumerate}[0]
+    \item[$\bullet$] Keep a firm grip on the local media to prevent public opinion from getting out of control. There is no substitute for the role of the media in regime change, and its entry into and occupation of a country's position of public opinion can help to bring down that country's regime. For the ruling party, therefore, to give ground. That means the beginning of the loss of power, public opinion out of control, not much time.
+
+    \item[$\bullet$] Legislation restricting the activities of NGOs in the country. On November 23, 2005, the Russian Duma adopted a draft law on non-governmental organizations inside and outside Russia, "According to this bill, non-governmental organizations in Russia are not allowed to accept foreign funds to engage in political activities, and foreign non-governmental organizations cannot fund non-governmental organizations in Russia to engage in political activities, and will clean, rectify, and restrain the behavior of informal organizations at home and abroad by means of registration, review of charters, supervision of the source and flow of funds, and inspection of whether the activities of non-governmental organizations are consistent with their purposes.
 
 
+    \item[$\bullet$]  It is necessary to handle the relationship with the opposition well. In the tactics of dealing with the opposition, countries that are not very tense in partisanship generally use the strategy of both unity and struggle. Kazakhstan, for example, on the one hand, has taken harsh measures against the excesses of some hardline opposition parties that disturb social order. On the other hand, ``in his address to Parliament in September 2005, the President stated that Kazakhstan planned to establish a 'State Commission for the Elaboration and Refinement of a Programme of Democratic Reform' under the direct authority of the President and to invite all political parties, public associations and non-governmental organizations to participate in order to expand the space for the opposition's political participation''.
+
+	\item[$\bullet$] Strengthen control over powerful departments such as the military and police. The inaction of the military, especially the police force and the internal guard forces, when the ``color revolution'' took place, was actually a disguised ``initiative'', that is, supporting the opposition's attack on the current regime with actual actions.
+\end{enumerate}}
+% \item Keep a firm grip on the local media to prevent public opinion from getting out of control. There is no substitute for the role of the media in regime change, and its entry into and occupation of a country's position of public opinion can help to bring down that country's regime. For the ruling party, therefore, to give ground. That means the beginning of the loss of power, public opinion out of control, not much time.
+% \item Legislation restricting the activities of NGOs in the country. On November 23, 2005, the Russian Duma adopted a draft law on non-governmental organizations inside and outside Russia, "According to this bill, non-governmental organizations in Russia are not allowed to accept foreign funds to engage in political activities, and foreign non-governmental organizations cannot fund non-governmental organizations in Russia to engage in political activities, and will clean, rectify, and restrain the behavior of informal organizations at home and abroad by means of registration, review of charters, supervision of the source and flow of funds, and inspection of whether the activities of non-governmental organizations are consistent with their purposes.
+% \item It is necessary to handle the relationship with the opposition well. In the tactics of dealing with the opposition, countries that are not very tense in partisanship generally use the strategy of both unity and struggle. Kazakhstan, for example, on the one hand, has taken harsh measures against the excesses of some hardline opposition parties that disturb social order. On the other hand, ``in his address to Parliament in September 2005, the President stated that Kazakhstan planned to establish a 'State Commission for the Elaboration and Refinement of a Programme of Democratic Reform' under the direct authority of the President and to invite all political parties, public associations and non-governmental organizations to participate in order to expand the space for the opposition's political participation''.
+% \item Strengthen control over powerful departments such as the military and police. The inaction of the military, especially the police force and the internal guard forces, when the ``color revolution'' took place, was actually a disguised ``initiative'', that is, supporting the opposition's attack on the current regime with actual actions.
+% \end{itemize}
 \end{letter}
 
 
+
+
+
+
+
+
+% \begin{figure}[h!] 	
+% \vspace{-0.8cm}   %调整图片与上文的垂直距离  
+% \setlength{\abovecaptionskip}{0.cm} %调整标题上方的距离   
+% \setlength{\abovecaptionskip}{0.cm} %调整标题下方的距离 	   
+% \setlength{\belowdisplayskip}{0.pt} 	
+% \includegraphics[width=15cm]{img/c1.pdf}  
+% \end{figure}
+% \newpage
+% \begin{figure}[h!] 	
+% \vspace{-0.8cm}   %调整图片与上文的垂直距离   
+% \setlength{\belowdisplayskip}{10.pt} 	
+% \includegraphics[width=15cm]{img/c2.pdf}  
+% \end{figure}
+
+
+
+
+
+
+
+
+
+
+
+\newpage
 % 参考文献，此处以 MLA 引用格式为例
-\begin{thebibliography}{99}
-\bibitem{1} Einstein, A., Podolsky, B., \& Rosen, N. (1935). Can quantum-mechanical description of physical reality be considered complete?. \emph{Physical review}, 47(10), 777.
-\bibitem{2} \emph{A simple, easy \LaTeX\ template for MCM/ICM: EasyMCM}. (2018). Retrieved December 1, 2019, from\url{https://www.cnblogs.com/xjtu-blacksmith/p/easymcm.html}
+\begin{thebibliography}{100}
+
+\bibitem{noauthor_chomage_nodate}
+Chômage au sens du {BIT} et indicateurs sur le marché du travail (résultats
+  de l’enquête emploi) ({BIT}) - troisième trimestre 2022.
+
+
+\bibitem{cao_influence_2021}
+Zhen Cao, Da-Peng Hao, Gang Tang, Zhi-Peng Xun, Hui Xia, and {School of
+  Materials and Physics, China University of Mining and Technology, Xuzhou
+  221116, China}.
+\newblock Influence of cluster shaped defects on fracture process of fiber
+  bundle.
+\newblock {\it Acta Phys. Sin.}, 70(20):204602, 2021.
+
+\bibitem{courchamp_100_2018}
+Franck Courchamp and Corey J.~A. Bradshaw.
+\newblock 100 articles every ecologist should read.
+\newblock {\it Nature Ecology \& Evolution}, 2(2):395--401, February 2018.
+
+\bibitem{farah_contacts_nodate}
+Sabine Farah and Bastien Revel.
+\newblock {CONTACTS} {LEAD} {MINISTRY}.
+
+\bibitem{hutchinson_homage_1959}
+G.~E. Hutchinson.
+\newblock Homage to {Santa} {Rosalia} or {Why} {Are} {There} {So} {Many}
+  {Kinds} of {Animals}?
+\newblock {\it The American Naturalist}, 93(870,):145--159, 1959.
+
+
+\bibitem{paine_food_1966}
+Robert~T. Paine.
+\newblock Food {Web} {Complexity} and {Species} {Diversity}.
+\newblock {\it The American Naturalist}, 100(910):65--75, January 1966.
+
+
+\bibitem{wenqi_research_2021}
+Sun Wenqi, Luo Xuechun, Zhou Zaohong, and Shengfu~Beier Road.
+\newblock {RESEARCH} {ON} {FACTORS} {AFFECTING} {SOCIAL} {STABILITY} {RISK}
+  {BASED} {ON} {DEMEATEL}-{ISM}.
+\newblock {\it Business and Management Research}, 5, 2021.
+
+\bibitem{zhang_study_2022}
+Zhishuo Zhang, Yao Xiao, Zitian Fu, Kaiyang Zhong, and Huayong Niu.
+\newblock A {Study} on {Early} {Warnings} of {Financial} {Crisis} of {Chinese}
+  {Listed} {Companies} {Based} on {DEA}–{SVM} {Model}.
+\newblock {\it Mathematics}, 10(12):2142, June 2022.
+
+\bibitem{__2013}
+Dunwen Liu and Huaide Peng.
+\newblock Safety risk evaluation of special long tunnel construction based on unconfirmed measure theory.
+\newblock {\it Science \& Technology Review}, 31(15):31--34, 2013.
+\newblock 12 citations(CNKI)[2023-2-5]{\textless}Peking University Core,
+  CSCD{\textgreater}.
+
+\bibitem{__2021}
+Qian Liu.
+\newblock {\it Study on the risk of social stability in Tibetan areas}.
+\newblock Master, Southwest University of Political Science and Law, 2021.
+
+\bibitem{__2021-2}
+Lei Ming, Liu and An Qi, Chen.
+\newblock
+ Discuss the reasons and enlightenment of Belarus' successful response to the three "color revolutions".
+\newblock {\it Chinese military conversion to civilian use}, (22):76--77, 2021.
+\newblock 3 citations(CNKI)[2023-2-5].
+
+\bibitem{__2008}
+Peng Liu.
+\newblock {\it
+  Research on early warning mechanism and evaluation of public crisis in provincial central cities in China}.
+\newblock Doctor, Harbin Engineering University, 2008.
+\newblock 49 citations(CNKI)[2023-2-5].
+
+\bibitem{_dematel-ism_2023}
+Hongqi Lu, Shizhe Shao, Yanwei Liu, and Xiujuan Chen.
+\newblock
+  {Analysis of influencing factors of fire and explosion accidents in university laboratory based on DEMATEL} - {ISM}.
+\newblock {\it 安全}, 44(1):23--31, 2023.
+
+\bibitem{_dematel_2023}
+Jun Song, Fang Li, and Zhong Hong Li
+\newblock {Analysis of influencing factors of college students' emergency capacity based on DEMATEL method}.
+\newblock {\it Technology and innovation management}, 44(1):90--96, 2023.
+
+\bibitem{_px_2018}
+Hai Jie, Yin, Rui Jiang, and Pei Yan, Lin.
+\newblock {Analysis of the characteristics and influencing factors of social stability risk in PX project}.
+\newblock {\it Engineering research - engineering in interdisciplinary perspective}, 10(03):276--287,
+  2018.
+
+
+\bibitem{__2017}
+Jian Xu and Tian Xie
+\newblock Social early warning analysis of international political turbulence
+\newblock {\it Journal of Shanghai Jiaotong University (Philosophy and Social Sciences Edition)}, 25(3):23--33,
+  2017.
+\newblock {\textless}PKU Core, CSSCI{\textgreater}.
+
+
+
+\bibitem{__2022-52}
+\newblock {\it
+ The change of Russian official cognition of "color revolution" and its response analysis}.
+\newblock Master, East China Normal University, 2022.
+
+\bibitem{__2020}
+King Bin.
+\newblock {\it Research on sharing finance and social stability}.
+\newblock Master, People's Public Security University of China, 2020.
+
+
+
+\bibitem{__2014}
+Xiaoliang Zhu.
+\newblock {\it Study on the risk assessment of social stability in china}.
+\newblock Doctor, Central China Normal University, 2014.
+\newblock 12 citations(CNKI)[2023-2-5].
+
+
+\bibitem{__2019-1}
+Yu Meitong
+\newblock {\it Research on social stability index and its index system under risk society}.
+\newblock Master, Zhejiang University, 2019.
+\newblock 5 citations(CNKI)[2023-2-3].
+
+
+\bibitem{__2019}
+Chang Su.
+\newblock
+ Analysis of the factors affecting the social stability of Central Asian countries -- based on the comprehensive analysis of basic and impact factors.
+\newblock {\it Research on Russia, Eastern Europe and Central Asia}, (3):61--83+156--157, 2019.
+\newblock 8 citations(CNKI)[2023-2-3]{\textless}CSSCI, AMI{\textgreater}.
+
+
+
+\bibitem{__2003}
+Wei Zhideng.
+\newblock Reflections on the early warning mechanism of social risks.
+\newblock {\it Social Science}, (7):65--71, 2003.
+\newblock 159 citations(CNKI)[2023-2-5]{\textless}PKU Core,
+  CSSCI{\textgreater}.
+
+
+\bibitem{__2007}
+Yongzhong Wei and Shaozhong Wu
+\newblock Discussion on the establishment of early warning level model for social security and stability in China.
+\newblock {\it Public Security Studies}, (1):32--38, 2007.
+\newblock 20 citations(CNKI)[2023-2-3].
+
 \end{thebibliography}
+
 
 
 % 以下为附录内容
 % 如您的论文中不需要附录，请自行删除
-\begin{subappendices}  % 附录环境
-\section{Appendix}
+% \begin{subappendices}  % 附录环境
+% \section{Appendix}
 
 
-\end{subappendices}  % 附录内容结束
+% \end{subappendices}  % 附录内容结束
 
 
 

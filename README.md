@@ -1,46 +1,57 @@
-# 一个简洁、易用的美赛 LaTeX 模板: easymcm
+# 2023.2.3华数杯
 
-[![GitHub release (latest by date)](https://img.shields.io/github/v/release/xjtu-blacksmith/easymcm)](https://github.com/xjtu-blacksmith/easymcm/releases)
-![GitHub All Releases](https://img.shields.io/github/downloads/xjtu-blacksmith/easymcm/total)
+## ·组队
 
-easymcm 是一个为美国大学生数学建模竞赛（MCM）准备的简易 LaTeX 模板。它二次开发自 LaTeX 宏包 `mcmthesis` 于 2013 年发布的 `v5.0` 版本，原作者是[王昭礼](http://www.latexstudio.net)。
+首先是队友的选取，这回也是在网上直接找的队友，额本来不准备打的，太贵了，但是后来看到有人发的找队友信息说可以全出报名费，所以就准备加个好友来看看，额虽然最后也摊了30。。。
 
-> 事实上，`easymcm` 与另一美赛 `mcmthesis` 的最新版本并无关联，后者为一个文档类（class）而非一个宏包（package）。该文档类现由 [Liam0205](https://github.com/Liam0205/mcmthesis/releases/) 维护。
+然后另外一个队友也是网上找的，额开始的时候倒是挺好的，感觉也愿意去学，会spss也会latex，虽然后面打比赛的时候全都没有用到。。。
 
-关于 `easymcm` 的说明及其来由，详见原作者[黑山雁的博客](https://xjtu-blacksmith.cn/program/easymcm)。2019 年时，easymcm 宏包由[黑山雁](https://github.com/xjtu-blacksmith)移交给[钱院学辅](https://qyxf.site)组织管理；到 2020 年，因若干原因，本模板再次移回到黑山雁个人名下。
+## ·准备
 
-## 发布渠道
+准备的时候倒也还好，都挺积极的，共享资料，额虽然没有一起看几篇论文或者一起打次试试。但是好歹那个数院的的哥们还来问下我算法要学啥，这倒是还好。
 
-[![GitHub Repo stars](https://img.shields.io/github/stars/xjtu-blacksmith/easymcm?style=social)](https://github.com/xjtu-blacksmith/easymcm)
-[![Gitee Repo stars](https://gitee.com/xjtu-blacksmith/easymcm/badge/star.svg?theme=dark)](https://gitee.com/xjtu-blacksmith/easymcm/stargazers)
+## ·比赛
 
-开发和分享此宏包，并无功利目的，仅是为了方便初学者的使用；基于此目的，作者不会将该宏包发布到 CTAN 之上，仅供国内用户学习使用。
+比赛的时候是最迷的，真的很无语。
 
-- GitHub（主要分发平台）：<https://github.com/xjtu-blacksmith/easymcm>
-- Gitee（国内镜像）：<https://gitee.com/xjtu-blacksmith/easymcm>
+### 选题
 
-## 使用说明
+对于选题，前一天还说好6点起来，我尼玛老子6点起来tmd它们睡到8点起来，一个队友说了8点再起来我也不说啥，至少上来我发的文献你多少看一眼啊日了。。
 
-本模板中包含的主要文件为两个：
+### 开始
 
-- `easymcm.sty`：宏包文件，定义了论文的各项样式、配置；
-- `PAPER.tex`：论文正文，用于撰写论文的具体内容。
+首先是开始的时候，第一个评价模型就卡在那，不知道在搞没落。后面的建模跟坨屎一样，不知道再搞点什么，甚至预测模型和评价模型都分不清楚，上来就想着找数据，跟我开始的时候一样上来就数据预处理。。。。。。
 
-后者可根据用户的需要修改为其他名称，例如队伍控制号为 1234567 的队伍可将 `PAPER.tex` 改名为 `1234567.tex` 再编译，这样将直接得到文件名符合官方要求的 `1234567.pdf` 文件。
+然后就是我提出我的看法，妈的都没人听，说什么他妈的评价模型和预测模型结合。你他妈的但凡老子发的文献你看一眼就知道他吗的什么是指标体系不是什么狗屁数据题。。。我他妈爬下来50篇文献全都是清一色的AHP，文献分析，专家调查，去他妈的机器学习，还尼玛神经网络，bp和ann都分不清楚，什么输入什么输出都不知道。。。。还什么灰色关联分析，你跟你所谓的社会稳定指数来做分析没关联是有鬼了。。。他妈的数据正向化之后出现负值去做关联分析。。。。。
 
-在这两份文件中，均有详细的注释说明。若用户需要局部修改样式（如修改某处的字号、段间距），在 `PAPER.tex` 中对应位置用分组 + 命令的方式就可解决；若用户需要修改全局样式（如修改正文的默认段间距），则可先到 `easymcm.sty` 文件中检查是否有对应的命令进行设置，若有可直接修改其参数，若无可自行添加。
+![image-20230207213522875](C:\Users\yuhangmeng\AppData\Roaming\Typora\typora-user-images\image-20230207213522875.png)找指标的时候肯定越多越好，你它妈越少越好，那别人的文献都是摆在那好看的嘛。。。
 
-## 编译方式
+买思路。。。。你他妈的买来的思路你觉得是对的吗，我去他妈的上来就机器学习，说什么一个社会燃烧理论是F奖左右，tm的一个不知道多少年前的模型，你可供你妈吧，，，
 
-本份模板允许使用 `pdftex`、`xetex`、`luatex` 等各个通行引擎编译，兼容老旧的 CTeX 套装。
+找数据，你找呗，你找的数据连20个都没有那你bp你妈个波,都不知道偏到哪去了还说尼玛的一个下午最好的结果了，你快去你妈的吧。。。。
 
-若您使用 CTeX 套装，建议您在[发布](https://github.com/qyxf/easymcm/releases)页面上下载**带有 ANSI 字样**的文件，否则文件中的中文注释将在 CTeX 套装的 WinEdt 编辑器中显示为乱码；反之，若您使用的是比较新的发行版本，请不要使用带有 ANSI 字样的版本。
+### 放弃
 
-如您身处比较流畅的国际网络环境中（例如，能够访问 Google），推荐您使用 [Overleaf](https://overleaf.com) 在线编译，以减少各类错误的发生。下载本模板的 `zip` 压缩包，并上传至 Overleaf 中作为项目，即可快速编辑、编译。
+自己也发现不行了，问我该咋办，叫我别急，我急什么，我自己问题一问题二都写完了，你们指标体系都没建立，我有什么急得。。对我来说我自己单了有什么损失吗，还便宜了170，不就是送你们一个奖吗无所谓啊。。我开始说哪里不行，把我写的发出来，开始看我的思路模型。
 
-## 联系作者
+一晚上之后，说未确知测度理论模型不行，你他妈的看下文献也行啊，去看你妈的csdn，github不知道吗，知网不知道吗，我不否认csdn在抄代码中的作用，你看模型合不合适好歹去看下有没有这方面的论文吧，，我不说要你去找，我发的你好歹看下啊艹了。
 
-本模板目前由[黑山雁](https://github.com/xjtu-blacksmith)维护。若在使用过程中出现任何问题，可通过以下方式联系作者：
+开始第三问的找数据进行评价评分，我其实知道它们评不出来的，但是也没明说，那就你评个大概去编几个数据出来呗。。。好，我他妈的发的文献，说的思路，按照10，20，30，40，50这样评分，你评个23，34什么出来。。。离谱。再就是叫你画个图，你x轴都没等距，![image-20230207224640144](C:\Users\yuhangmeng\AppData\Roaming\Typora\typora-user-images\image-20230207224640144.png)我看你甚至都没用excel画更别说你学的spss，matlab了。。。到这里我说我自己去画，好家伙发现白俄罗斯和乌克兰我不能说画反了，只能说全画错了，我甚至都不知道该怎么去改了。。。![image-20230207224622539](C:\Users\yuhangmeng\AppData\Roaming\Typora\typora-user-images\image-20230207224622539.png)
 
-- 在本模板的[讨论页面](https://github.com/xjtu-blacksmith/easymcm/discussions)发布帖子（推荐，但需要注册 GitHub 账号）；
-- 通过作者的邮箱 xjbs@protonmail.com 联系作者（不推荐，作者很可能不会回复你）。
+## 垃圾
+
+草泥马不说了，买论文。。。。。尼玛的隔壁基本的判别能力都没有，不说其他，用work去排版你也交上去，老子那麽漂亮的热图给你对角线都错了，你是由多几把离谱艹，垃圾艹。![image-20230207224233212](C:\Users\yuhangmeng\AppData\Roaming\Typora\typora-user-images\image-20230207224233212.png)
+
+尼玛一个对角线但凡长点脑子也不会是这样。什么几把东西
+
+
+
+# S
+
+本身就是自己的问题，买思路的时候就该想到的，两个人都有那个人好友，我就应该猜到的。妈的其实写完之后没交上去就猜到了应该是不准备交我的上去了。。当时其实已经做好了准备，但是它在群里骗我要交我的上去的时候我还真他妈的信了我日。。。。。也想到了要去下载来看看到底是不是我的那一篇。。。但是晚上没睡着，，怎么睡得着啊操他妈的。。结果白天没起来。。。。。果然，不是我那篇。。。。还是要留个心眼真的。。。不说别的，30快能买到教训还是很划算的。。。。这逼奖狗都不要。还好老子开了文档保护操他妈的操了。。。
+
+# 补：
+
+BMI00008.pdf为本人所作
+
+00008.pdf为那篇垃圾论文
